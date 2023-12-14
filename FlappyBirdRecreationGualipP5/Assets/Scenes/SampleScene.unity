@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 781211189}
   - component: {fileID: 781211188}
-  - component: {fileID: 781211187}
+  - component: {fileID: 781211190}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -233,55 +233,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &781211187
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781211186}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: -0.26}
-      - {x: -0.5, y: -0.26}
-  m_UseDelaunayMesh: 0
 --- !u!212 &781211188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -350,6 +301,51 @@ Transform:
   - {fileID: 1117478024}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &781211190
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781211186}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.38716817}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.22566366}
+  m_EdgeRadius: 0
 --- !u!1 &1117478023
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +442,8 @@ GameObject:
   - component: {fileID: 2079302919}
   - component: {fileID: 2079302918}
   - component: {fileID: 2079302917}
+  - component: {fileID: 2079302921}
+  - component: {fileID: 2079302922}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -497,18 +495,31 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.42, y: 0.21}
-      - {x: 0.24, y: 0.35999998}
-      - {x: 0.14, y: 0.39999998}
-      - {x: -0.29, y: 0.39999998}
-      - {x: -0.5, y: 0.14999999}
-      - {x: -0.5, y: -0.19999999}
-      - {x: -0.28, y: -0.41}
-      - {x: -0.17, y: -0.42999998}
-      - {x: 0.12, y: -0.42999998}
-      - {x: 0.32999998, y: -0.34}
-      - {x: 0.48, y: -0.14}
-      - {x: 0.48, y: 0.089999996}
+    - - {x: 0.43436882, y: 0.15663625}
+      - {x: 0.4035826, y: 0.1990551}
+      - {x: 0.41179127, y: 0.19905517}
+      - {x: 0.24273624, y: 0.34631884}
+      - {x: 0.1208464, y: 0.37811008}
+      - {x: 0.14547229, y: 0.3726376}
+      - {x: 0.096220486, y: 0.38631883}
+      - {x: -0.047337417, y: 0.39389786}
+      - {x: -0.14551304, y: 0.38691214}
+      - {x: -0.31462583, y: 0.32064942}
+      - {x: -0.46716556, y: 0.1718897}
+      - {x: -0.5108197, y: -0.03432301}
+      - {x: -0.47263795, y: -0.19179143}
+      - {x: -0.36521384, y: -0.3061034}
+      - {x: -0.26084659, y: -0.37716538}
+      - {x: -0.0824411, y: -0.42179132}
+      - {x: 0.13915363, y: -0.40811023}
+      - {x: 0.33273622, y: -0.31537402}
+      - {x: 0.4635827, y: -0.12358272}
+      - {x: 0.47912475, y: 0.016221639}
+      - {x: 0.46631882, y: 0.08999999}
+      - {x: 0.46905503, y: 0.10641728}
+      - {x: 0.45739245, y: 0.086972274}
+      - {x: 0.47107348, y: 0.086972274}
+      - {x: 0.46631882, y: 0.079055116}
     - - {x: -0.14, y: -0.35}
       - {x: -0.32, y: -0.26999998}
       - {x: -0.38, y: -0.21}
@@ -552,6 +563,7 @@ PolygonCollider2D:
       - {x: 0.22999999, y: 0.26999998}
       - {x: 0.29, y: 0.24}
       - {x: 0.35, y: 0.17999999}
+      - {x: 0.36026222, y: 0.16118583}
       - {x: 0.41, y: 0.07}
       - {x: 0.41, y: 0.04}
       - {x: 0.42, y: 0.03}
@@ -657,6 +669,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2079302921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079302916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6240fd154fc1df449b52f8245c4e3451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upForce: 200
+--- !u!95 &2079302922
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079302916}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9db408886ea951f41a34a5afa0cc7769, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

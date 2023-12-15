@@ -35,5 +35,6 @@ public class Fish : MonoBehaviour
     {
         isDead = true;
         anim.SetTrigger("Die");
+        GameControl.instance.FishDied();
     }
 }
